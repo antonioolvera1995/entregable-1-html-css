@@ -619,3 +619,22 @@ body {
 .div-header-main-3 >i {
   display: none;
   }
+
+  .div-phone-main{
+    display: none;
+  
+  }
+  
+  
+  .div-phone-main-2{
+    display: none;
+  
+  }
+
+  #cros{
+    display: none;
+  }
+  
+  #menu{
+  display: none;  
+  }
