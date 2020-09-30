@@ -38,19 +38,16 @@
         }
 
 
-        function cros(){
+        function cros() {
 
             document.getElementsByClassName("div-phone-main-2")[0].classList.add("div-phone-main-2-reverse");
 
-            setTimeout(function (){
+            setTimeout(function () {
                 let cros = document.getElementById("cros");
                 let menu = document.getElementById("menu");
                 cros.style.display = "none";
                 menu.style.display = "flex";
                 document.getElementsByClassName("div-phone-main")[0].style.display = "none";
                 document.getElementsByClassName("div-phone-main-2")[0].style.display = "none";
-            }, 200); 
+            }, 200);
         }
-
-
-      

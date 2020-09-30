@@ -573,7 +573,6 @@ body {
   color: #585858;
 }
 
-
 /* ---------------- */
 .div-phone-main {
   display: none;
@@ -593,7 +592,7 @@ body {
   background-color: #000000;
   position: fixed;
   align-items: flex-start;
-  animation: menu-anim 300ms linear; 
+  animation: menu-anim 300ms linear;
 }
 
 .div-phone-main-2-reverse {
@@ -604,7 +603,7 @@ body {
   background-color: #000000;
   position: fixed;
   align-items: flex-start;
-  animation: menu-anim-reverse 300ms linear; 
+  animation: menu-anim-reverse 300ms linear;
 }
 
 .div-phone-main-2 > div {
@@ -652,57 +651,56 @@ body {
   color: #1db954;
 }
 
-
-.a-icon-0{
-height: 100%;
+.a-icon-0 {
+  height: 100%;
 }
-.a-icon{
+.a-icon {
   display: flex;
   flex-direction: row;
   margin-top: auto;
-
 }
 
-.a-icon >div{
+.a-icon > div {
   display: flex;
   flex-direction: row;
   color: white;
   margin-left: 1.5em;
-  margin-bottom:3em ;
+  margin-bottom: 3em;
   margin-right: -1.2em;
   align-items: center;
-
-  }
+}
 .a-icon > div {
-display: flex;
-flex-direction: row;
-
+  display: flex;
+  flex-direction: row;
 }
 
-.a-icon > div >img{
+.a-icon > div > img {
   width: 2em;
-  
+}
+
+#cros {
+  display: none;
+  transition-duration: 300ms;
+}
+
+#menu {
+  transition-duration: 300ms;
+}
+
+@keyframes menu-anim {
+  0% {
+    transform: translateX(30em);
   }
-
-  #cros{
-    display: none;
-    transition-duration: 300ms;
+  100% {
+    transform: translateX(0em);
   }
+}
 
-  #menu{
-    
-    transition-duration: 300ms;
+@keyframes menu-anim-reverse {
+  0% {
+    transform: translateX(0em);
   }
-
-
-  @keyframes menu-anim{
-0%{transform: translateX(30em);}
-100%{transform: translateX(0em);}
-
+  100% {
+    transform: translateX(30em);
   }
-
-  @keyframes menu-anim-reverse{
-    0%{transform: translateX(0em);}
-    100%{transform: translateX(30em);}
-    
-      }
+}
