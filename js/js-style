@@ -1,0 +1,25 @@
+        function navDark() {
+            let sly = window.scrollY;
+            let varHeader1;
+            sly > 0 ? document.getElementById("id-header-1").className = "header-main-dark" : document.getElementById(
+                "id-header-1").className = "header-main";
+
+            if (sly > 0) {
+
+                let change = document.getElementsByClassName("change-color");
+                for (let i = 0; i < change.length; i++) {
+
+                    change[i].classList.add("change-color-dark")
+                }
+
+            } else {
+
+                let change = document.getElementsByClassName("change-color");
+
+                for (let i = 0; i < change.length; i++) {
+
+                    change[i].classList.remove("change-color-dark")
+                }
+            }
+
+        }

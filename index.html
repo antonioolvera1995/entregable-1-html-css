@@ -6,35 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style-pc.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 
-    <script>
-        function navDark() {
-            let sly = window.scrollY;
-            let varHeader1;
-            sly > 0 ? document.getElementById("id-header-1").className = "header-main-dark" : document.getElementById(
-                "id-header-1").className = "header-main";
+    <link rel="stylesheet" media="(min-width: 1699px)" href="style/style-pc.css" />
+    <link rel="stylesheet" media="(max-width: 1698px) and (min-width: 1201px)" href="style/style-pc-big.css" />
+    <link rel="stylesheet" media="(max-width: 1200px) and (min-width: 768px)" href="style/style-pc-medium.css" />
+    <link rel="stylesheet" media="(max-width: 767px)" href="style/style-phone.css" />
 
-            if (sly > 0) {
 
-                let change = document.getElementsByClassName("change-color");
-                for (let i = 0; i < change.length; i++) {
-
-                    change[i].classList.add("change-color-dark")
-                }
-
-            } else {
-
-                let change = document.getElementsByClassName("change-color");
-
-                for (let i = 0; i < change.length; i++) {
-
-                    change[i].classList.remove("change-color-dark")
-                }
-            }
-
-        }
-    </script>
+    <script src="js/js-style" type="text/javascript"></script>
 
 
 </head>
@@ -53,6 +33,7 @@
                 </a>
             </div>
             <div class="div-header-main-3">
+                <i class="fa fa-bars" aria-hidden="true"></i>
                 <ul>
                     <li><a class="change-color" href="">Premium</a></li>
                     <li><a class="change-color" href="">Ayuda</a></li>
@@ -76,7 +57,7 @@
 
             <div class="div-1-section-1">
                 <div class=div-2-section-1>
-                    <p>Consigue Premium gratis 1 mes</p>
+                    <h1>Consigue Premium gratis 1 mes</h1>
 
                 </div>
                 <div class="div-5-section-1">
@@ -103,7 +84,7 @@
 
             <div class="div-1-secction-2">
                 <div class="title-section-2">
-                    <p>¿Por qué pasarte a Premium?</p>
+                    <h2>¿Por qué pasarte a Premium?</h2>
                 </div>
 
                 <div class="icons-section-2">
@@ -111,6 +92,7 @@
                         <div class="div-img"><img src="images/img-1.png" alt=""></div>
                         <div class="text-1-secction-2">
                             <p>Descarga música.</p>
+                            <span class="text-ocult-secction-2">Llévala siempre contigo.</span>
                         </div>
                         <div class="text-2-secction-2">
                             <p>Llévala siempre contigo.</p>
@@ -120,6 +102,7 @@
                         <div class="div-img"><img src="images/img-2.png" alt=""></div>
                         <div class="text-1-secction-2">
                             <p>Sin anuncios.</p>
+                            <span class="text-ocult-secction-2">Disfruta de música sin interrupciones.</span>
                         </div>
                         <div class="text-2-secction-2">
                             <p>Disfruta de música sin interrupciones.</p>
@@ -129,6 +112,7 @@
                         <div class="div-img"><img src="images/img-3.png" alt=""></div>
                         <div class="text-1-secction-2">
                             <p>Escucha lo que quieras</p>
+                            <span class="text-ocult-secction-2">Incluso en el móvil.</span>
                         </div>
                         <div class="text-2-secction-2">
                             <p>Incluso en el móvil.</p>
@@ -138,6 +122,7 @@
                         <div class="div-img"><img src="images/img-4.png" alt=""></div>
                         <div class="text-1-secction-2">
                             <p>Salta todas las canciones que quieras.</p>
+                            <span class="text-ocult-secction-2">Simplemente dale a siguiente.</span>
                         </div>
                         <div class="text-2-secction-2">
                             <p>Simplemente dale a siguiente.</p>
@@ -156,7 +141,7 @@
         <section class="section-3" id="plans">
             <div class="div-1-secction-3">
                 <div class="title-section-3">
-                    <p>Elige tu Premium</p>
+                    <h2>Elige tu Premium</h2>
                 </div>
                 <div class="sub-title-section-3">
                     <p>Escucha sin límites en tu teléfono, altavoz y otros dispositivos.</p>
