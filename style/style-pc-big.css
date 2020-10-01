@@ -7,8 +7,8 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: spotify ,Helvetica, Arial, sans-serif; 
-  
+  font-family: spotify, Helvetica, Arial, sans-serif;
+
   scroll-behavior: smooth;
 }
 
@@ -541,31 +541,34 @@ body {
   color: #585858;
 }
 
-
-.text-ocult-secction-2{
-display: none;
-  
+.text-ocult-secction-2 {
+  display: none;
 }
 
-.div-header-main-3 >i {
+.div-header-main-3 > i {
   display: none;
-  }
+}
 
-  .div-phone-main{
-    display: none;
-  
-  }
-  
-  
-  .div-phone-main-2{
-    display: none;
-  
-  }
+.div-phone-main {
+  display: none;
+}
 
-  #cros{
-    display: none;
+.div-phone-main-2 {
+  display: none;
+}
+
+#cros {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+@media (min-width: 1699px) and (max-width: 1745px) {
+  .div-header-main-3 > ul > li {
+    font-size: 0.9em;
+    margin-left: 1.9em;
+    transition-duration: 300ms;
   }
-  
-  #menu{
-  display: none;  
-  }
+}

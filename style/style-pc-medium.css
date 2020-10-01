@@ -7,8 +7,8 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: spotify ,Helvetica, Arial, sans-serif; 
-  
+  font-family: spotify, Helvetica, Arial, sans-serif;
+
   scroll-behavior: smooth;
 }
 
@@ -270,8 +270,6 @@ body {
   align-items: center;
 }
 
-
-
 .div-img > img {
   width: 7em;
 }
@@ -285,8 +283,7 @@ body {
   margin-bottom: 0.3em;
 }
 
-.text-1-secction-2{
-
+.text-1-secction-2 {
   margin-bottom: 3em;
 }
 
@@ -297,25 +294,30 @@ body {
   font-size: 1em;
   font-weight: 100;
   text-align: center;
-
 }
-.text-ocult-secction-2{
+.text-ocult-secction-2 {
   margin: 1em;
   color: #222326;
   font-size: 1em;
   font-weight: 100;
   text-align: center;
   text-align: left;
-  
 }
 
-@media (min-width: 767px) and (max-width: 1139px){
-.div-header-main-3 > ul >li{
-
-  margin: 0.7em;
+@media (min-width: 767px) and (max-width: 1169px) {
+  .div-header-main-3 > ul > li {
+    margin: 0.7em;
+    transition-duration: 300ms;
+  }
 }
 
+@media (min-width: 767px) and (max-width: 1141px) {
+  .div-header-main-3 > ul > li {
+    margin: 0.6em;
+    transition-duration: 300ms;
+  }
 }
+
 @media (min-width: 767px) and (max-width: 1012px) {
   .icons-section-2 > div {
     margin: 1em;
@@ -323,18 +325,19 @@ body {
     flex-direction: row;
     width: 19em;
     align-items: center;
+    transition-duration: 300ms;
   }
 
   .div-img > img {
     width: 7em;
+    transition-duration: 300ms;
   }
 
-  .text-1-secction-2{
-
+  .text-1-secction-2 {
     margin-bottom: 2em;
     margin-left: 1em;
+    transition-duration: 300ms;
   }
-  
 
   .text-1-secction-2 > p {
     color: #222326;
@@ -344,23 +347,31 @@ body {
     text-align: left;
     margin-left: 0em;
     margin-bottom: 0.3em;
+    transition-duration: 300ms;
   }
 
-  .text-ocult-secction-2{
+  .text-ocult-secction-2 {
     margin: 0.5em;
     margin-left: 0em;
     color: #222326;
     font-size: 0.9em;
     font-weight: 100;
     text-align: center;
+    transition-duration: 300ms;
   }
 
-  .div-header-main-3 > ul >li{
-
+  .div-header-main-3 > ul > li {
     margin: 0.3em;
     font-size: 0.91em;
+    transition-duration: 300ms;
   }
-
+}
+@media (min-width: 767px) and (max-width: 796px) {
+  .div-header-main-3 > ul > li {
+    margin: 0.3em;
+    font-size: 0.85em;
+    transition-duration: 300ms;
+  }
 }
 
 /* --------section-3------------ */
@@ -616,25 +627,22 @@ body {
   color: #585858;
 }
 
-.div-header-main-3 >i {
+.div-header-main-3 > i {
   display: none;
-  }
+}
 
-  .div-phone-main{
-    display: none;
-  
-  }
-  
-  
-  .div-phone-main-2{
-    display: none;
-  
-  }
+.div-phone-main {
+  display: none;
+}
 
-  #cros{
-    display: none;
-  }
-  
-  #menu{
-  display: none;  
-  }
+.div-phone-main-2 {
+  display: none;
+}
+
+#cros {
+  display: none;
+}
+
+#menu {
+  display: none;
+}

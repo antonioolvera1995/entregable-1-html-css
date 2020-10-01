@@ -30,6 +30,7 @@
             let menu = document.getElementById("menu");
             cros.style.display = "flex";
             menu.style.display = "none";
+            document.getElementsByClassName("div-phone-main")[0].classList.remove("div-phone-main-reverse");
             document.getElementsByClassName("div-phone-main")[0].style.display = "flex";
 
             document.getElementsByClassName("div-phone-main-2")[0].classList.remove("div-phone-main-2-reverse");
@@ -40,6 +41,7 @@
 
         function cros() {
 
+            document.getElementsByClassName("div-phone-main")[0].classList.add("div-phone-main-reverse");
             document.getElementsByClassName("div-phone-main-2")[0].classList.add("div-phone-main-2-reverse");
 
             setTimeout(function () {
@@ -49,5 +51,55 @@
                 menu.style.display = "flex";
                 document.getElementsByClassName("div-phone-main")[0].style.display = "none";
                 document.getElementsByClassName("div-phone-main-2")[0].style.display = "none";
-            }, 200);
+            }, 250);
+        }
+
+        function cros2() {
+
+            document.getElementsByClassName("div-phone-main")[0].classList.add("div-phone-main-reverse");
+            document.getElementsByClassName("div-phone-main-2")[0].classList.add("div-phone-main-2-reverse");
+
+
+            let cros = document.getElementById("cros");
+            let menu = document.getElementById("menu");
+            cros.style.display = "none";
+            menu.style.display = "flex";
+            document.getElementsByClassName("div-phone-main")[0].style.display = "none";
+            document.getElementsByClassName("div-phone-main-2")[0].style.display = "none";
+
+        }
+
+
+
+        // setInterval(function(){
+
+        //     let wind = window.innerWidth;
+        //     console.log(wind);
+
+        //     if(wind >=769){
+        //          document.getElementById("cros").style.visibility = "hidden";
+        //          document.getElementById("menu").style.visibility = "hidden";
+        //          cros2();
+        //     }else{
+        //          document.getElementById("cros").style.visibility = "visible";
+        //          document.getElementById("menu").style.visibility = "visible";
+        //     }
+
+        // },50);	
+
+
+        function resize() {
+
+            let wind = window.innerWidth;
+            console.log(wind);
+
+            if (wind >= 769) {
+                document.getElementById("cros").style.visibility = "hidden";
+                document.getElementById("menu").style.visibility = "hidden";
+                cros2();
+            } else {
+                document.getElementById("cros").style.visibility = "visible";
+                document.getElementById("menu").style.visibility = "visible";
+            }
+
         }

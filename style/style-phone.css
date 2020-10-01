@@ -573,7 +573,7 @@ body {
   color: #585858;
 }
 
-/* ---------------- */
+/* ------------------------------------------- */
 .div-phone-main {
   display: none;
   flex-direction: column;
@@ -582,6 +582,18 @@ body {
   background-color: #00000093;
   align-items: flex-end;
   position: fixed;
+  animation: menu-anim-1 300ms linear;
+}
+
+.div-phone-main-reverse {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #00000093;
+  align-items: flex-end;
+  position: fixed;
+  animation: menu-anim-1-reverse 300ms linear;
 }
 
 .div-phone-main-2 {
@@ -702,5 +714,25 @@ body {
   }
   100% {
     transform: translateX(30em);
+  }
+}
+
+@keyframes menu-anim-1 {
+  0% {
+    background-color: #00000000;
+  }
+
+  100% {
+    background-color: #00000093;
+  }
+}
+
+@keyframes menu-anim-1-reverse {
+  0% {
+    background-color: #00000093;
+  }
+
+  100% {
+    background-color: #00000000;
   }
 }
